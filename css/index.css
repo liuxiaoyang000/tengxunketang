@@ -1,0 +1,905 @@
+* {
+    margin:0;
+    padding:0;
+    -webkit-text-stroke-width: 0px;
+    -moz-text-stroke-width: 0px;
+    -o-text-stroke-width: 0px;
+    -ms-text-stroke-width: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing:border-box;
+}
+body {
+    font-family: "Hiragino Sans GB","Microsoft Yahei",arial,\5b8b\4f53,"Helvetica Neue",Helvetica,STHeiTi,sans-serif;
+    background-color:#FFF;
+    font-size: 12px;
+    color: #000;
+}
+a {
+    color: #000;
+    font-size: 12px;
+    text-decoration: none;
+    blr:expression(this.onFocus=this.blur());
+}
+input,select,textarea {
+    vertical-align:middle;
+    width: auto;
+    outline: none;
+    border:0;
+}
+select {
+    appearance: normal;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+img {
+    vertical-align:middle;
+    border:0;
+    outline:none;
+}
+
+div, p, dl, dt, dd, ul, ol, li, h1,h2,h3,h4,h5,h6 {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing:0px;
+    border: 0;
+}
+/*页头-开始*/
+.head_area{
+    clear: both;
+    width: 1200px;
+    height: 65px;
+    margin: 10px auto;
+}
+.main_logo{
+    display: block;
+    float: left;
+    width: 210px;
+    height: 61px;
+    overflow: hidden;
+}
+.main_logo img{
+    width: 100%;
+}
+.head_area .search_area{
+    float:left;
+    width: 455px;
+    height: 65px;
+    margin-left: 120px;
+}
+.head_area .search_area dt{
+     clear: both;
+     width: 455px;
+     height: 40px;
+     border: 2px solid #188eee;
+ }
+.head_area .search_area dt ul{
+    float: left;
+    width: 65px;
+    text-indent: 12px;
+    background:white;
+    cursor: pointer;
+}
+.head_area .search_area dt ul:hover li{
+    display: block;
+}
+.head_area .search_area dt ul li:hover{
+    background: #eeeeee;
+}
+.head_area .search_area dt ul li.active:hover{
+    background:white;
+}
+.head_area .search_area dt ul li{
+    display: none;
+    width: 65px;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+}
+.head_area .search_area dt ul li.active{
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  border-right: 1px solid #cccccc;
+
+}
+.head_area .search_area dt .keywords{
+   float: left;
+    width: 300px;
+    height: 36px;
+    margin-left: 10px;
+}
+.head_area .search_area dt .bt_submit{
+    float: right;
+    width: 60px;
+    height: 36px;
+}
+.head_area .search_area dd{
+    clear: both;
+    width: 455px;
+    height:25px ;
+    position: absolute;
+    margin-top: 5px;
+    z-index: -1;
+}
+.head_area .search_area dd ul{
+    clear: both;
+    width: 455px;
+    height:25px ;
+}
+.head_area .search_area dd ul li{
+    float: left;
+    margin-right: 30px;
+
+}
+.head_area .search_area dd ul li a{
+    color: #cccccc;
+}
+.head_area .help_area{
+     float: right;
+    position: relative;
+ }
+.head_area .help_area span{
+    display: block;
+    float: left;
+    width: 60px;
+    height: 18px;
+    line-height: 18px;
+    margin-top: 15px;
+    text-align: center;
+    cursor: pointer;
+    padding-bottom: 10px;
+
+}
+.head_area .help_area span a:hover{
+    color: #0A83C4;
+}
+.head_area .help_area span.active{
+    border-right: 1px solid #cccccc;
+}
+.head_area .help_area span.active1{
+    height: 30px;
+}
+.head_area .help_area span.active1 a{
+   text-align: right;
+}
+.head_area .help_area span.active1:hover dl{
+    display: block;
+}
+.head_area .help_area dl{
+    display: none;
+    width: 125px;
+    height: 80px;
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    border: 1px solid #cccccc;
+}.head_area .help_area dl dt:hover{
+    color: #0094EE;
+ }
+.head_area .help_area dl dd:hover{
+    color: #0094EE;
+}
+
+.head_area .help_area dl dt{
+    width: 125px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+}
+.head_area .help_area dl dd{
+    width: 125px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    border-top: 1px solid #cccccc;
+}
+/*页头-结束*/
+/*页头频道-开始*/
+.main_menu_area{
+    clear: both;
+    width: 1200px;
+    height: 50px;
+    line-height: 50px;
+    margin: 15px auto;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.main_menu_area .head_category{
+    float: left;
+    width: 220px;
+    height: 50px;
+    background: #188eee;
+  padding-left: 15px;
+}
+.main_menu_area .head_category a{
+    color: white;
+    font-size: 16px;
+}
+.main_menu_area .menu_list{
+    float: left;
+    width: 680px;
+    height: 50px;
+    margin-left: 20px;
+}
+.main_menu_area .menu_list a{
+    font-size: 16px;
+    margin-right: 30px;
+}
+.main_menu_area .menu_list a:hover{
+    color: #0094EE;
+}
+/*页头频道-结束*/
+/*幻灯片-开始*/
+.slide_area{
+    clear: both;
+    width: 100%;
+    height: 300px;
+    background: #1c2246;
+}
+.slide_area .slide_center{
+    clear: both;
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+.slide_center .slide_img{
+    clear: both;
+    width: 760px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slide_area .slide_center .category_child{
+    width: 220px;
+    background: #0477c0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+.slide_area .slide_center .category_child .list_area{
+    height: 70px;
+    padding: 15px;
+}
+.slide_area .slide_center .category_child .father a:hover{
+    text-decoration: underline;
+}
+.slide_area .slide_center .category_child .father dt{
+    clear: both;
+    width: 100%;
+    height: 25px;
+}
+.slide_area .slide_center .category_child .father dt a{
+    color: white;
+    font-size: 15px;
+}
+.slide_area .slide_center .category_child .father dd{
+    clear: both;
+    width: 100%;
+    height: 35px;
+
+}
+.slide_area .slide_center .category_child .father dd a{
+    display: inline-block;
+    margin-right: 10px;
+    color: #97d2f7;
+    font-size: 13px;
+}
+.slide_area .slide_center .category_child .children_list{
+    display: none;
+    width: 980px;
+    height: 425px;
+    position: absolute;
+    top: 0px;
+    left: 219px;
+    border: 2px solid #09699c;
+    background: #FFFFFF;
+    opacity: 0.95;
+    filter: alpha(opacity=95);
+}
+.slide_area .slide_center .category_child .children_list ul{
+    width: 760px;
+    overflow: hidden;
+    float: left;
+}
+.slide_area .slide_center .category_child .children_list li{
+    clear: both;
+    margin-left: 30px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.slide_area .slide_center .category_child .children_list li dt {
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    padding-right: 60px;
+}
+.slide_area .slide_center .category_child .children_list li dt a{
+    font-size: 14px;
+    color: #039ae3;
+    font-weight: bold;
+}
+.slide_area .slide_center .category_child .children_list li dd{
+    height: 50px;
+    line-height: 50px;
+    float: left;
+}
+.slide_area .slide_center .category_child .children_list li dd a{
+    display: block;
+    float: left;
+    margin-right: 30px;
+    font-size: 14px;
+}
+.slide_area .slide_center .category_child .list_area:hover .children_list{
+    display: block;
+}
+.slide_area .slide_center .category_child .children_list li dd a:hover{
+    color: #62b4f7;
+}
+.slide_area .slide_center .category_child .children_list div{
+    float: right;
+}
+.slide_area .slide_center .category_child .children_list div a{
+    display: block;
+    clear: both;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    margin-right: 15px;
+}
+.slide_area .slide_num{
+    clear: both;
+    width: 100%;
+    height: 25px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 3;
+    left: 0px;
+    bottom: 20px;
+    text-align: center;
+}
+.slide_area .slide_num ol{
+    display: inline-block;
+    width: auto;
+    height: 25px;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: rgba(255,255,255,0.5);
+    padding: 0px 30px;
+    text-align: center;
+    font-size: 0;
+}
+.slide_area .slide_num ol li{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background: white;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+.slide_area .slide_num ol li:hover{
+    background: black;
+}
+.slide_area .slide_num ol li.active{
+    background: black;
+}
+.slide_bottom_area{
+    width: 1200px;
+    height: 135px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-left: 220px;
+    padding-top: 5px;
+    border: 1px solid #cccccc;
+}
+.slide_bottom_area a{
+    display: block;
+    float: left;
+
+}
+/*幻灯片-结束*/
+/*猜你喜欢-开始*/
+.like_area{
+    clear: both;
+    width: 1200px;
+    height: 300px;
+    margin:0 auto;
+    margin-top: 40px;
+    margin-bottom: -28px;
+}
+.like_area dt{
+    width: 100%;
+    height: 40px;
+    line-height: 35px;
+    border-bottom: 1px solid #ccc;
+}
+.like_area dt strong{
+    float: left;
+    font-size: 20px;
+    cursor: pointer;
+}
+.like_area dt strong:hover{
+    color: #039ae3;
+}
+.like_area dt span{
+    float: right;
+    font-size: 14px;
+    cursor: pointer;
+}
+.like_area dt span:hover{
+    color: #039ae3;
+}
+.like_area dd{
+    width: 105%;
+    margin-top: 30px;
+}
+.like_area dd ul{
+    width: 100%;
+}
+.like_area dd li{
+    float: left;
+    width: 240px;
+    height: 220px;
+    padding: 10px;
+    margin-left: -7px;
+    margin-right: 11px;
+}
+.like_area dd li:hover{
+    box-shadow: 0px 0px 5px #999;
+}
+.like_area dd li a.top{
+    display: block;
+    clear: both;
+    height: 125px;
+    width: 220px;
+    position: relative;
+}
+.like_area dd li a.top img{
+    width: 100%;
+    height: 100%;
+}
+.like_area dd li a.top span{
+    color: white;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background:rgba(0,0,0,0.4)
+}
+.like_area dd li a.bottom{
+    display: block;
+    clear: both;
+    height: 30px;
+    font-size: 13px;
+    margin-top: 8px;
+    margin-bottom: 17px;
+}
+.like_area dd li a.bottom:hover{
+    color: #039ae3;
+}
+.like_area dd li p{
+    width: 100%;
+    marign-top:20px
+}
+.like_area dd li p strong{
+    float: left;
+    font-size: 15px;
+    color: #5fb41b;
+}
+.like_area dd li p span{
+    float: right;
+    color: #999999;
+    cursor: pointer;
+}
+.like_area dd li p span:hover{
+    color: #039ae3;
+}
+/*猜你喜欢-结束*/
+/*中间区域-开始*/
+.main_list_area{
+    clear: both;
+    width: 100%;
+    height: 590px;
+    overflow: hidden;
+    background: #f9f9f9;
+}
+.main_list_area .main_area{
+    width: 1200px;
+    height: 590px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.main_list_area .list_left{
+    float: left;
+    width: 222px;
+    height: 460px;
+    cursor: pointer;
+}
+.main_list_area .list_left span{
+    display: block;
+    clear: both;
+    font-size: 25px;
+    margin-bottom: 13px;
+}
+.main_list_area .list_left span:hover{
+    color: #0094EE;
+}
+.main_list_area .list_left a{
+    display: block;
+    clear: both;
+    width: 222px;
+    height: 450px;
+}
+.main_list_area .list_left a img{
+    width: 100%;
+    height: 100%;
+    margin-left: -18px;
+}
+.main_list_area .list_middle{
+    float: left;
+    width: 760px;
+    height: 460px;
+    margin-left: -18px;
+}
+.main_list_area .list_middle .top_area{
+    width: 760px;
+    height: 46px;
+    border-bottom: 1px solid #cccccc;
+}
+.main_list_area .list_middle .top_area a{
+    display: block;
+    float: left;
+    width: 60px;
+    height: 47px;
+    line-height: 40px;
+    font-size: 13px;
+    margin-right: 30px;
+    text-align: center;
+}
+.main_list_area .list_middle .top_area a:hover{
+    color: #0395EF;
+    border-bottom: 2px solid #0395EF;
+}
+.main_list_area .like_area{
+    clear: both;
+    width: 750px;
+    height: 300px;
+    margin:0 auto;
+    margin-top: 15px;
+    margin-bottom: -28px;
+    margin-left: 30px;
+}
+.main_list_area .like_area dd{
+    width: 100%;
+    margin-top: 20px;
+}
+.main_list_area .like_area dd ul{
+    width: 100%;
+}
+.main_list_area .like_area dd li{
+    float: left;
+    width: 240px;
+    height: 220px;
+    padding: 10px;
+    margin-right: 11px;
+}
+.main_list_area .like_area dd li:hover{
+    box-shadow: 0px 0px 5px #999;
+}
+.main_list_area .like_area dd li a.top{
+    display: block;
+    clear: both;
+    height: 125px;
+    width: 220px;
+    position: relative;
+}
+.main_list_area .like_area dd li a.top img{
+    width: 100%;
+    height: 100%;
+}
+.main_list_area .like_area dd li a.top span{
+    color: white;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background:rgba(0,0,0,0.4)
+}
+.main_list_area .like_area dd li a.bottom{
+    display: block;
+    clear: both;
+    height: 30px;
+    font-size: 13px;
+    margin-top: 8px;
+    margin-bottom: 17px;
+}
+.main_list_area.like_area dd li a.bottom:hover{
+    color: #039ae3;
+}
+.main_list_area .like_area dd li p{
+    width: 100%;
+    marign-top:20px
+}
+.main_list_area .like_area dd li p strong{
+    float: left;
+    font-size: 15px;
+    color: #5fb41b;
+}
+.main_list_area .like_area dd li p span{
+    float: right;
+    color: #999999;
+    cursor: pointer;
+}
+.main_list_area .like_area dd li p span:hover{
+    color: #039ae3;
+}
+.main_list_area .list_right{
+    float: right;
+    width: 236px;
+    height: 460px;
+    border-top: 1px solid #cccccc;
+    margin-top: 45px;
+}
+.main_list_area .list_right .sort_area{
+    margin-left: 5px;
+}
+.main_list_area .list_right .sort_area dt{
+    clear: both;
+    width: 236px;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #cccccc;
+    margin-top: 22px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.main_list_area .list_right .sort_area dt p{
+    float: left;
+    width: 118px;
+    height: 45px;
+    text-indent: 20px;
+    cursor: pointer;
+}
+.main_list_area .list_right .sort_area dt p:hover{
+    border-bottom: 1px solid #188eee;
+}
+.main_list_area .list_right .sort_area dt span:hover{
+    border-bottom: 1px solid #188eee;
+}
+.main_list_area .list_right .sort_area dt span{
+    float: right;
+    color: #cccccc;
+    width: 118px;
+    height: 45px;
+    text-indent: 30px;
+}
+.main_list_area .list_right .sort_area dd{
+    clear: both;
+    width: 100%;
+    height: 390px;
+    overflow: hidden;
+}
+.main_list_area .list_right .sort_area dd ul{
+    width: 100%;
+    height: 390px;
+    overflow: hidden;
+    margin-top: 25px;
+}
+.main_list_area .list_right .sort_area dd ul li{
+    clear: both;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 6px;
+}
+.main_list_area .list_right .sort_area .sort_top{
+    clear: both;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+
+}
+.main_list_area .list_right .sort_area .sort_top span{
+    float: left;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background: #bbbbbb;
+    font-size: 15px;
+    text-align: center;
+}
+.main_list_area .list_right .sort_area .sort_top span.active1{
+    background: #ed4300;
+}
+.main_list_area .list_right .sort_area .sort_top span.active2{
+    background: #ff7316;
+}
+.main_list_area .list_right .sort_area .sort_top span.active3{
+    background: #ff9c00;
+}
+.main_list_area .list_right .sort_area .sort_top p{
+    float: right;
+    width: 190px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    cursor: pointer;
+}
+.main_list_area .list_right .sort_area .sort_top p:hover{
+    color: #0395EF;
+}
+.main_list_area .list_right .sort_area .sort_bottom{
+    clear: both;
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+}
+.main_list_area .list_right .sort_area .sort_bottom a{
+    display: block;
+    float: left;
+    width: 90px;
+    height: 50px;
+    margin-right: 15px;
+    margin-left: 30px;
+}
+.main_list_area .list_right .sort_area .sort_bottom a img{
+    width: 100%;
+}
+.main_list_area .list_right .sort_area .sort_bottom div{
+    float: left;
+}
+.main_list_area .list_right .sort_area .sort_bottom div span{
+    clear: both;
+    color: #e85308;
+    font-size: 13px;
+   width: 90px;
+    height:25px;
+    line-height: 25px;
+}
+.main_list_area .list_right .sort_area .sort_bottom div p{
+    clear: both;
+    color: #999999;
+    font-size: 15px;
+    width: 90px;
+    height:25px;
+    line-height: 30px;
+}
+.main_list_area .list_right .sort_area .sort_bottom{
+    display: none;
+}
+.main_list_area .list_right .sort_area div.active{
+    display: block;
+}
+.main_list_area .list_right .sort_area ul:hover .sort_bottom{
+    display: none;
+}
+.main_list_area .list_right .sort_area li:hover .sort_bottom{
+    display: block;
+}
+.main_list_area1{
+    background: #FFFFFF;
+}
+/*中间区域-结束*/
+/*底部区域-开始*/
+.footer_area{
+    clear: both;
+    width: 100%;
+    height: 255px;
+    overflow: hidden;
+    background: #f9f9f9;
+}
+.footer_area .middle{
+    clear: both;
+    width: 1200px;
+    height: 100px;
+    line-height: 100px;
+    margin: 80px auto;
+}
+.footer_area .middle p{
+    font-size: 25px;
+    float: left;
+    margin-right: 25px;
+}
+.footer_area .middle span.left{
+    float: left;
+    font-size: 25px;
+    width: 25px;
+    height: 30px;
+    line-height: 30px;
+    background: #cccccc;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 37px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.footer_area .middle span.right{
+    float: left;
+    font-size: 25px;
+    width: 25px;
+    height: 30px;
+    line-height: 30px;
+    background: #cccccc;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 37px;
+    margin-left: -15px;
+    cursor: pointer;
+}
+.footer_area .middle span:hover{
+    background: #188eee;
+}
+.footer_area .middle ul{
+    float: left;
+}
+.footer_area .middle ul li{
+    float: left;
+    margin-right: 28px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #eeeeee;
+    cursor: pointer;
+}
+.footer_area .middle ul li img{
+    width: 100%;
+    height: 100%;
+
+}
+/*底部区域-结束*/
+/*底部链接-开始*/
+.footer_link{
+    clear: both;
+    width: 100%;
+    height: 185px;
+    background: #444546;
+    border-bottom: 1px solid #777777;
+}
+.footer_link dl{
+    width: 1200px;
+    height: 185px ;
+    color: #999999;
+    margin: 0 auto;
+    padding-top: 45px;
+}
+.footer_link dl dt{
+    font-size: 23px;
+    margin-bottom: 33px;
+}
+.footer_link dl a{
+    display: inline-block;
+    color: #999999;
+    font-size: 13px;
+    margin-right: 41px;
+}
+/*底部链接-结束*/
+/*底部版权-开始*/
+.icon_area{
+    width: 100%;
+    height: 180px;
+    background:#444547;
+    text-align: center;
+    padding-top: 40px;
+}
+.icon_area p{
+    color: #777777;
+}
+
+/*底部版权-结束*/
